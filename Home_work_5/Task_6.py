@@ -17,3 +17,23 @@
 """
 ПОКА НЕ ЗНАЮ КАК ЭТО РЕШАТЬ :((((((9((99((999
 """
+
+result = {}
+with open('Text_For_Task_6.txt', encoding="utf-8") as file:
+    file_lines = file.readlines()
+    for line in file_lines:
+        data = line.split()
+        # проверка всех возможных чисел
+        hours = 0
+        for elem in data[1:]:
+            if elem != '-':
+                num = '0'
+                # запись числа
+                for i in elem:
+                    if i.isdigit():  # проверяет является ли числом
+                        num += i
+                    else:
+                        break
+                hours += int(num)
+        result.update({data[0].strip(':'): hours})
+print(result)

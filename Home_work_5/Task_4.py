@@ -10,7 +10,6 @@
 Новый блок строк должен записываться в новый текстовый файл.
 """
 
-
 def rewrite_file():
     decoder = {'One': 'Один', 'Two': 'Два', 'Three': 'Три', 'Four': 'Четыре'}
     new_text = []
@@ -24,3 +23,18 @@ def rewrite_file():
 
 
 rewrite_file()
+
+# nums = {
+#     'One': "Один",
+#     'Two': "Два",
+#     'Three': "Три",
+#     'Four': "Четыри"
+# }
+#
+# with open('Text_For_Task_4.txt') as file, open('Text_For_Task_4_r.txt', 'w') as new_file:
+#     file_lines = file.readlines()
+#     for line in file_lines:
+#         data = line.split() # Для каждой строки разделяем данные по пробелам
+#         rus_num = nums.get(data[0])
+#         new_file.write(f'{line.replace(data[0], rus_num)}')
+

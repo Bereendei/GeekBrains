@@ -15,3 +15,10 @@ except IOError:
     print('Ошибка файла')
 except ValueError:
     print('Ошибка ввода данных')
+
+# with open('xxx.txt', 'w+') as file:
+#     nums_str = file.read().split()
+#     sum = 0
+#     for num in nums_str:
+#         sum += int(num)
+# print(sum)
